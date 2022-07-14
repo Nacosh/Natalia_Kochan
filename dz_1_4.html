@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 50px;
+        }
+        
+        
+        del {
+         color: red;
+        }
+        ins {
+         color: blue;
+        }
+        </style>
+</head>
+<body>
+    <br>
+    <h1><center>Заголовок первого уровня</center></h1>
+    <h3>Предварительно форматированный текст:</h3>
+    <pre>
+ x | o |
+ ‐‐‐‐‐‐‐‐‐‐‐
+   | х |
+ ‐‐‐‐‐‐‐‐‐‐‐
+ o | x | o</pre>
+    <hr>
+    <h3>Тег address</h3>
+    <address>Kuprevicha, 1/1, 220141, Minsk, Belarus. Phone: +375.17.2686911</address>
+    <hr>
+    <h3>Семантические и функциональные строчные теги</h3>
+    Пожелания автора:<br>
+    <del>Данный текст убрать из монографии</del> и заменить его на <ins>вновь помещённый текст</ins>.
+    <hr>
+    <h3>Работа со строчными и блоковыми цитатами</h3>
+    Цитата короткая:<br>
+    <q style = "quotes: none"><i>И всё­таки она вертится!</i></q><br><br>
+    Цитата занимающая несколько предложений:<br>
+    <blockquote>О сколько нам открытий чудных<br>
+    Готовят просвещенья дух<br>
+    И опыт, сын ошибок трудных,<br>
+    И гений, парадоксов друг,<br>
+    И случай, бог изобретатель...</blockquote>
+    <hr>
+    <h3>Семантические и функциональные строчные теги</h3>
+    <strong>Тэг &ltSTRONG&gt делает данный фрагмент текста более важным.</strong> <em>Тэг &ltem&gt менее важным.</em>
+В то время как теги &ltb&gt и &lti&gt делают текст просто <b>полужирным</b> и <i>курсивом</i> соответственно.
+    <hr>
+    <h3>Теги форматирования машинного языка</h3>
+    При выполнении программного кода на языке PERL:
+<pre><code>
+#!/usr/local/bin/perl
+print "Content‐type: text/html\n\n";
+print "&ltH1&gtHello World&lt/H1&gt\n";</code></pre>
+    <p>Программа выведет:</p>
+    <tt>Hello, World!</tt>
+    <p>Однако в браузере у нас будет отображаться результат выполнения этой программы:</p>
+    <span style = "font-size:200%"> <b>Hello, World!</b></span>
+    <hr>
+    <h3>Комментарии и литералы(мнемоники) в HTML</h3>
+    <code>&lt!‐‐ это комментарий ‐‐&gt<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&lt!‐‐ и это также комментарий,<br>
+        &nbsp&nbsp&nbsp&nbsp&nbspзанимающий более одной строки ‐‐&gt</code>
+    <hr>
+    <h3>Теги над­- и подстрочных символов</h3>
+    <p><center><b>Магазин работает:</b><br><br>
+    c 08<sup><u>30</u></sup> до 18<sup><u>30</u></sup><br> 
+    обед с 13<sup><u>00</u></sup> до 14<sup><u>00</u></sup><br>
+    выходной: <u>суббота</u>, <u>воскресенье</u></p></center>
+    <hr>
+    <h3>Вот такой текст</h3>
+    <b>Э
+    <span style = "vertical-align: -10px" >т</span>
+    о 
+    <span style = "vertical-align: -10px" >п</span>
+    р
+    <span style = "vertical-align: -10px" >о</span>
+    с
+    <span style = "vertical-align: -10px" >т</span>
+    о
+    <span style = "vertical-align: -10px" >в</span>
+    е
+    <span style = "vertical-align: -10px" >с</span>
+    е
+    <span style = "vertical-align: -10px" >л</span>
+    ы
+    <span style = "vertical-align: -10px" >й</span>
+    т
+    <span style = "vertical-align: -10px" >е</span>
+    к
+    <span style = "vertical-align: -10px" >с</span>
+    т</b>
+    <hr>
+    <h3>Акроним и курсив</h3>
+    <abbr>ТФ: Y<i>(x)=e<sup>-iπx</sup></i>+log<sub>x</sub>4</abbr>
+    <hr>
+    <h3>Тег small внтури абзаца</h3>
+    <footer align = "right"><small>Создано при помощи блокнота&#169</small></footer>
+</body>
+</html>
