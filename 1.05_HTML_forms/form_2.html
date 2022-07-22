@@ -10,10 +10,11 @@
     <form style = "width:700px" method="POST"  action = "http://fe.it-academy.by/TestForm.php">
         <fieldset>
             <legend>Личные данные</legend>
+            
             <div>Фамилия   <input type = "text" name = 'second_name'  pattern = "[А-Яа-яЁё]{,25}" maxlength="25" required autofocus></div><br>
             <div>Имя <input type = "text" name = 'first_name'  pattern = "[А-Яа-яЁё]{, 20}" maxlength="20" required></div><br>
             <div>Отчество <input type = "text" name = 'father_name' pattern = "[А-Яа-яЁё]{, 24}" maxlength="24" required></div><br>
-                       
+            <!-- почему-то не работает pattern - пропускает всякую абракадабру -->
             <fieldset>
                 <legend>Паспортные данные</legend>
                 <div><input type = "text" name = "passport" pattern = "[A-Z]{2}" required> Серия</div>
