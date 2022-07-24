@@ -18,9 +18,9 @@
                         <input type="submit" value="Искать">
                     </div>
                     <div>
-                        <input type="radio" id="field4" name="site" checked>
-                        <label for="field4">на сайте</label>
-                        <input type="radio" id="field5" name="google">
+                        <input type="radio" id="field44" name = "source" value ="site" checked>
+                        <label for="field44">на сайте</label>
+                        <input type="radio" id="field5" name = "source" value ="google">
                         <label for="field5">в google</label>
                     </div>
                       <p><i>Длина запроса не более 10 символов</i></p>
@@ -37,10 +37,10 @@
                         <input type="submit" value="Искать">
                     </div>
                     <div>
-                        <input type="radio" id="field4" name="site" checked>
+                        <input type="radio" id="field4" name = "search" value ="site" checked>
                         <label for="field4">на сайте</label>
-                        <input type="radio" id="field5" name="google">
-                        <label for="field5">в google</label>
+                        <input type="radio" id="field55" name = "search" value ="google">
+                        <label for="field55">в google</label>
                     </div>
                       <p><i>* - обязательное поле</i></p>
                     </fieldset>
@@ -61,7 +61,7 @@
                         <label for="field2">* Пароль</label>
                       </div>
                       <div>
-                        <input type="radio" id="field3" name="authorization">
+                        <input type="radio" id="field3" name="authorization" value = "stay_system">
                         <label for="field3">Оставаться в системе</label>
                       </div>
                       <div>
@@ -127,14 +127,14 @@
                     <fieldset>
                     <legend>Города РБ</legend>
                     <div>
-                    <select name="cities_rb" size = "5" multiple>
+                    <select name="cities_rb[]" size = "5" multiple>
                         <option value = "Minsk">Минск</option>
                         <option value = "Grodno">Гродно</option>
                         <option value = "Gomel">Гомель</option>
                         <option value = "Brest">Брест</option>
                         <option value = "Vitebsk">Витебск</option>
                     </select>
-                    <select name="cities_rb_rf" size = "5" multiple>
+                    <select name="cities_rb_rf"[] size = "5" multiple>
                     <optgroup label = "Города Беларуси">
                         <option value = "Minsk">Минск</option>
                         <option value = "Grodno">Гродно</option>
