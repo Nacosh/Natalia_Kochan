@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            font-family: sans-serif;
+            font-size: 14px;
+            background-color: rgb(121, 148, 138);
+            margin-left: 100px;
+            margin-top: 50px
+        }
+    </style>
+    <style media="print">
+        body {
+            font-family: sans-serift;
+            font-size: 18px;
+            background-color: rgb(35, 108, 97);
+            margin-left: 100px;
+            margin-top: 50px
+        }
+    </style>
+
+</head>
+
+<body>
+    <base target="_blank">
+    <pre><img src = 'images/Icon-Python.png' style = "float: right" alt = 'python' title = "ПОДСКАЗКА ВСПЛЫЛА"></pre>
+
+    <header>
+        <h1><a name="anchor10">HOW-TO: Программа на Python, Часть 1</a></h1>
+        <ul>
+            <li><i>Программа на Python — часть 1</i></li>
+            <li><a href='How_To_Python_p2_v3.html'><i>Программа на Python — часть 2</i></a></li>
+            <li><a href='How_To_Python_p2_v3.html'><i>Программа на Python — часть 3</i></a></li>
+        </ul>
+    </header>
+    <article>
+        <h1>Содержание</h1>
+        <h3>HOW-TO: Программа на Python, Часть 1</h3>
+        <ul>
+            <li><u><a href="#anchor1">Наша первая программа</a></u></li>
+            <li><u><a href="#anchor2">Пример цикла For</a></u></li>
+        </ul>
+        <p>Из множества существующих языков программирования Python — один из самых лёгких
+            в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+            Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+            обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+            создание консольных приложений, а в следующей — программирование графических
+            интерфейсов <a
+                href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81_%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F">(GUI)</a>.
+            Давайте создадим простую программу прямо сейчас.</p>
+    </article>
+    <h2><a name="anchor1">Наша первая программа</a></h2>
+    <p>Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает
+        каждая строка и пойдём дальше.</p>
+    <p>Введите эти 4 строки:</p><br>
+
+    <kbd>#!/usr/bin/env python<br>
+        print 'Hello. I am a python program.'<br>
+        name = raw_input("What is your name?")<br>
+        print "Hello there, " + name + "!"</kbd>
+
+    <p>Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
+        <b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать
+        программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+        этого введите в терминале<br><br>
+
+        <b><u><i style="font-family:Arial, Verdana, sans-serif" style="font-size:10pt">chmod +x
+                    hello.py</i></u></b><br><br>
+        в папке, в которой вы сохранили программу. Теперь запустите её.<br><br><br>
+
+        <tt>greg@earth:~/python_examples$ ./hello.py<br>
+            Hello. I am a python program.<br>
+            What is your name? Ferd Burphel<br>
+            Hello there, Ferd Burphel!<br>
+            greg@earth:~/python_examples$</tt>
+    </p><br>
+    <p>Вот и всё. </p>
+
+    <h2><a name="anchor2">Пример цикла For</a></h2>
+    <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+        редактор и наберите следующую программу:</p><br>
+    <code>#!/usr/bin/env python<br>
+            for cntr in range(0,10):<br>
+            <span>&nbsp&nbsp&nbsp print cntr</span></code>
+    <p><i>Не забудьте поставить символ табуляции перед строкой «print cntr».</i> Это важно. В
+        Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
+        как в других языках программирования, а отступы.</p>
+    <table width='100%'>
+        <tr>
+            <td>
+                <img src='images/prev.png' style="float: left" alt='НАЗАД' title='НАЗАД'>
+            </td>
+            <td>
+                <a href="#anchor10">
+                    <center><img src='images/home.png' alt='НАВЕРХ' title='НАВЕРХ'></center>
+                </a>
+            </td>
+            <td>
+                <a href="How_To_Python_p2_v3.html">
+                    <img src='images/next.png' style="float: right" alt='ВПЕРЕД' title='ВПЕРЕД'>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>
