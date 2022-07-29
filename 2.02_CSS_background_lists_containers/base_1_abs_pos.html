@@ -16,24 +16,25 @@
             border: solid red 1px;
             display: inline-block;
             border-radius: 25px;
+            position: absolute;
             top: 250px;
 
         }
 
         div.v1 {
-            margin-left: 10px;
+            left: 10px;
         }
 
         div.v2 {
-            margin-left: -120px;
+            left: 40px;
         }
 
         div.v3 {
-            margin-left: -110px;
+            left: 70px;
         }
 
         div.v4 {
-            margin-left: -100px;
+            left: 100px;
         }
 
         div.a1 {
@@ -103,10 +104,6 @@
         table {
             width: 800 px;
         }
-
-        body {
-            margin: 3cm;
-        }
     </style>
 </head>
 
@@ -122,7 +119,6 @@
             </td>
         </tr>
     </table>
-    <!-- почему при уменьшении ширины окна браузера картинки выходят за пределы <body>? -->
 
     <div style="background-position: 0px 0px;" class="v1 a1"></div>
     <div style="background-position: -142px 0px;" class="v2 a1"></div>
