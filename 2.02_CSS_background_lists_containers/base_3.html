@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+
+        /* body {
             padding: 0.1cm;
 
-        }
+        } */
 
         .total {
             background-color: rgb(224, 216, 216);
@@ -18,47 +18,55 @@
         }
 
         .bl {
-            width: 15cm;
-            float: left;
             background-color: aqua;
-            padding-bottom: 3cm;
+            float: left;
+            width: 15cm;
+            padding: 20px;
             margin-top: 0.2cm;
         }
 
         .art0 {
             background-color: sandybrown;
             margin: right;
-            /* margin: right сработало, но не понимаю, почему, потому что везде идет либо 
-            margin-(left, right, top, button): (размер) либо margin: (размер) */
             margin-top: 0.2cm;
-            /* padding : 0.1cm; */
-
+            padding: 0.1cm;
+            margin-bottom: 0.2cm;
         }
 
         .art1 {
             background-color: royalblue;
-            margin-bottom: 0.2cm;
             overflow: auto;
             /* почему при уменьшении ширины браузера это блок не переходит вниз? 
 Блок переходит вниз, если задать overflow:auto, но тогда блок залазит 
 под другой(не сохраняется ровная левая вертикальная страница*/
             /* если убираем overflow: auto, то "съезжает" верхняя граница. почему? */
+            /* margin: right сработало, но не понимаю, почему, потому что везде идет либо 
+            margin-(left, right, top, button): (размер) либо margin: (размер) */
+            margin: right;
+            padding: 20px;
+            /* без этого паддинга статья 1 не переходит вниз, 
+            а просто "исчезает" при уменьшении размера окна браузера */
+            margin-bottom: 0.2cm;   
         }
 
         .art2 {
             background-color: chartreuse;
             overflow: auto;
+            margin: right;
             margin-bottom: 0.2cm;
+            padding: 20px;
 
         }
 
         .clear {
             clear: both;
+            background-color: blueviolet;
         }
 
         .foot {
             background-color: darkseagreen;
             clear: both;
+            padding: 20px;
         }
 
         p {
@@ -71,6 +79,8 @@
     <div class="total">
 
         <div class="bl">
+            <!-- как сделать, чтобы был отступ от верхней границы блока art0? по идее это просто сиблинги, при 
+            этом art0 заходит под bl1 просто потому, что у art0 нет размеров, и он просто растгивается на всю ширину -->
             <h3>Блок навигации</h3>
             <ul>
                 <li>Ширина 15см</li>
@@ -84,6 +94,7 @@
         </div>
 
         <div class="art0">
+            <div style="height: 5px"></div>
             <div class="art1">
                 <h3>Статья 1</h3>
                 <p>Размер блока:</p>
@@ -91,7 +102,7 @@
                 <p> Должен присутствовать цвет фона.</p>
                 <p>Во всех "статьях" сделайте отступ снизу от соседей, равным .2, при помощи свойства margin-bottom.</p>
             </div>
-
+            <div style="height: 5px"></div>
             <div class="art2">
                 <h3>Статья 2</h3>
                 <p>Размер блока:</p>
@@ -105,9 +116,11 @@
                     по
                     правому краю внутри данной статьи для этой картинки.</p>
                 <img src="images/email.jpg" style="float:right">
-                <div class="clear"></div>
+                
             </div>
+            <div class="clear"></div>
         </div>
+        <div style="height: 5px"></div>
         <div class="foot">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь
             контентом.</div>
     </div>
