@@ -1,54 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div {
+            width: 700px;
+            height: 750px;
+            background: rgb(105, 137, 228);
+            padding: 5px;
+            padding-right: 20px;
+            background-image: url("img_2.webp");
+            border: solid 1px black;
+            float: left;
+        }
+    </style>
+
+
+
 </head>
+
 <body>
-    <form style = "width:700px" method="POST"  action = "http://fe.it-academy.by/TestForm.php">
+    <form style="width:700px" method="POST" action="http://fe.it-academy.by/TestForm.php">
         <fieldset>
             <legend></legend>
             <label></label>
-            <select name = "citizenship" required >
-                        <option>РБ</option>
-                        <option>РФ</option>
-                        <option>США</option>
-                        <option>Израиль</option>
-                    </select>
-              
-                <label>Адрес</label>
-                    <textarea name = "address"></textarea>
-            </fieldset>
-        
+            <select name="citizenship" required>
+                <option>РБ</option>
+                <option>РФ</option>
+                <option>США</option>
+                <option>Израиль</option>
+            </select>
+
+            <label>Адрес</label>
+            <textarea name="address"></textarea>
+        </fieldset>
+
     </form>
-    
+
 </body>
+
 </html>
 
 <!DOCTYPE HTML>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Контекстные селекторы</title>
-  <style>
-    UL LI UL { color: green; }
-    UL UL { color: red; }
-    LI SPAN { color: blue; }
-    LI LI { color: fuchsia; }
-    UL SPAN { color: orange; }
-  </style>
- </head> 
- <body>
-  <ul>
-   <li>
+
+<head>
+    <meta charset="utf-8">
+    <title>Контекстные селекторы</title>
+    <style>
+        UL LI UL {
+            color: green;
+        }
+
+        UL UL {
+            color: red;
+        }
+
+        LI SPAN {
+            color: blue;
+        }
+
+        LI LI {
+            color: fuchsia;
+        }
+
+        UL SPAN {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
     <ul>
-      <li><span>Первый</span></li>
-      <li><span>Второй</span></li>
-      <li><span>Третий</span></li>
+        <li>
+            <ul>
+                <li><span>Первый</span></li>
+                <li><span>Второй</span></li>
+                <li><span>Третий</span></li>
+            </ul>
+        </li>
     </ul>
-   </li>
-  </ul>
- </body>
+    <div>
+
+    </div>
+
+
+</body>
+
 </html>
