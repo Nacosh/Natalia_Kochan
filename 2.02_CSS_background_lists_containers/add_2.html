@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .total {
+            background-color: rgb(224, 216, 216);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            /* flex: 0.5; */
+        }
+
+        .bl {
+            background-color: aqua;
+            padding: 20px;
+            /* margin-top: 0.3cm;
+            
+            margin-left: 0.3cm; */
+            margin: 0.3cm;
+            flex: 1 300px;
+        }
+
+        .art0 {
+            background-color: sandybrown;
+            margin: 0.3cm;
+            padding: 0.1cm;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex: 1 300px;
+        }
+
+        .art1 {
+            background-color: royalblue;
+            overflow: auto;
+            padding: 20px;
+            margin-bottom: 0.1cm;
+
+            
+        }
+
+        .art2 {
+            background-color: chartreuse;
+            overflow: auto;
+            padding: 20px;
+        }
+
+        .foot {
+            background-color: darkseagreen;
+            clear: both;
+            padding: 20px;
+        }
+
+        p {
+            margin: 0.2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="total">
+        <div class="bl">
+            <h3>Блок навигации</h3>
+            <ul>
+                <li>Ширина 15см</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую
+                    статью, как
+                    показано в
+                    данном примере</li>
+            </ul>
+        </div>
+
+        <div class="art0">
+
+            <div class="art1">
+                <h3>Статья 1</h3>
+                <p>Размер блока:</p>
+                <p>Занимает всю доступную ширину.</p>
+                <p> Должен присутствовать цвет фона.</p>
+                <p>Во всех "статьях" сделайте отступ снизу от соседей, равным .2, при помощи свойства margin-bottom.</p>
+            </div>
+
+            <div class="art2">
+                <h3>Статья 2</h3>
+                <p>Размер блока:</p>
+                <p>Занимает всю доступную ширину.</p>
+                <p>Должен присутствовать цвето фонаВо всех "статьях" </p>
+                <p>Сделайте отступ снизу от
+                    соседей,
+                    равным .2см, при помощи свойства margin-bottom. </p>
+                <p>Картинка вставлена при помощи тега, плавание
+                    организовано
+                    по
+                    правому краю внутри данной статьи для этой картинки.</p>
+                <img src="images/email.jpg" style="float:right">
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="foot">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь
+        контентом.</div>
+</body>
+
+</html>

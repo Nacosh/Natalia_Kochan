@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .var_a {
+            width: 80%;
+            padding: 2em;
+            background-color: aqua;
+            background-image: url(images/border/b-r.gif), url(images/border/b-l.gif), url(images/border/t-l.gif), url(images/border/t-r.gif),
+                url(images/border/l.gif), url(images/border/r.gif), url(images/border/t.gif), url(images/border/b.gif);
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+            background-position: bottom right, bottom left, top left, top right, left, right, top, bottom;
+        }
+
+        .var_c {
+            /* width: 80%; */
+            /* padding: 2em; */
+            background-color: aqua;
+            margin: 100px auto;
+            border: 100px solid red;
+            background-size: 100%;
+            border-image-source: url(img/ramka.png);
+            border-image-slice: 100;
+            border-image-repeat: round;
+        }
+
+        .var_b {
+            background-size: contain;
+            background-color: aqua;
+            margin: 100px auto;
+            border: 100px solid red;
+            /* background-size: contain; */
+            border-image-source: url(images/ramka1.png);
+            border-image-slice: 100;
+            border-image-repeat: round;
+            background-clip: border-box;
+        }
+
+       
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="var_a">
+        <h2>Домашнее задание №4</h2>
+        Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png.
+        Разрезать ramka.png и сверстать резиновый фон, какой приведён ниже.<br>
+        Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину.
+        <br>
+        Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на
+        всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+    </div>
+
+
+    <div class="var_b">
+        <h2>Домашнее задание №4</h2>
+        Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png.
+        Разрезать ramka.png и сверстать резиновый фон, какой приведён ниже.<br>
+        Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину.
+        <br>
+        Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на
+        всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+    </div>
+
+    <div class="var_c">
+        <h2>Домашнее задание №4</h2>
+        Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png.
+        Разрезать ramka.png и сверстать резиновый фон, какой приведён ниже.<br>
+        Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину.
+        <br>
+        Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на
+        всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+    </div>
+
+
+</body>
+
+</html>
