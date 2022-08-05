@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            border: solid blueviolet 2px;
+            border-radius: 0px 25px 0px 25px;
+            padding: 5px;
+        }
+
+        li {
+            list-style-image: url(img/3.jpg);
+        }
+
+        a span {
+            display: none;
+            position: absolute;
+            margin-left: 150px;
+            margin-top: -0.7cm;
+        }
+
+        a:hover span {
+            display: block;
+        }
+
+        /* почему здесь на срабатывает visibility, которую использовала ранее для выпадающих подсписков? */
+    </style>
+</head>
+
+<body>
+    <h2>Форматы файлов</h2>
+    <p>.DOC или .doc (от англ. <img src="img/1.png"><a href="">document</a> - расширение имени файла, используемое для
+        файлов, представляющих текст,
+        с разметкой или без. Расширение .DOC часто использовалось для обозначения простых текстовых файлов без
+        формирования,
+        однако позже стало использоваться для двоичных форматов с разметкой.<br>
+        <img src="img/2.jpg"><a href="">Документ MS WordS</a>
+    </p>
+
+
+    <p>Portable Document Format (<img src="img/1.png"><a href="">PDF</a>) - межплатформенный формат электронных
+        документов, разработанный фирмой Adobe Systems
+        с использованием ряда возможностей языка Postscript.<br>
+        <img src="img/4.png"><a href="">Документ PDF</a>
+    </p>
+    <p>ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <img
+            src="img/1.png"><a href="">.zip</a> и хранит
+        в сжатом или несжатом виде один или несколько файлов, которое можно из него извлечь путем распаковки с помощью
+        специальной программы.<br>
+        <img src="img/5.gif"><a href="">Архив</a>
+    </p>
+    <ul>
+        <h3>Это список файлов</h3>
+        <h3>Это список файлов</h3>
+        <li><a href="">Документ MS Word <span><img src="img/2.jpg"></span></a></li>
+        <li><a href="">Документ PDF<span><img src="img/4.png"></span></a></li>
+        <li><a href="">Архив<span><img src="img/5.gif"></span></a></li>
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .table {
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #dddddd;
+            border-collapse: collapse;
+        }
+
+        .table th {
+            font-weight: bold;
+            padding: 5px;
+            background: #888181;
+            border: 1px solid #dddddd;
+        }
+
+        .table td {
+            border: 1px dotted black;
+            padding: 5px;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background: rgba(167, 156, 156, 0.5);
+        }
+
+        .table tbody tr:nth-child(even) {
+            background: #F7F7F7;
+        }
+
+        .table thead>tr:hover {
+            background-color: purple;
+            transition: 2s;
+        }
+        /* почемц-то tr в tbody становится розовым, а tr в thead  -нет */
+        .table tbody>tr:hover {
+            background-color: plum;
+            font-variant-caps: all-small-caps;
+            transition: 2s;
+        }
+        P{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ФИО</th>
+                    <th>пол</th>
+                    <th>должность</th>
+                    <th>дата рождения</th>
+                    <th>данные 01</th>
+                    <th>данные 02</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Иванов Иван Иванович</td>
+                    <td>м</td>
+                    <td>начальник</td>
+                    <td>01.01.1960</td>
+                    <td>ФФФФФ</td>
+                    <td>БББББ</td>
+                </tr>
+                <tr>
+                    <td>Петрова Илонна Петровна</td>
+                    <td>м</td>
+                    <td>начальник</td>
+                    <td>01.01.1960</td>
+                    <td>ФФФФФ</td>
+                    <td>БББББ</td>
+                </tr>
+                <tr>
+                    <td>Сидоров Илья Игоревич</td>
+                    <td>м</td>
+                    <td>начальник</td>
+                    <td>01.01.1960</td>
+                    <td>ФФФФФ</td>
+                    <td>БББББ</td>
+                </tr>
+                <tr>
+                    <td>Пупин Федор Федорович</td>
+                    <td>м</td>
+                    <td>начальник</td>
+                    <td>01.01.1960</td>
+                    <td>ФФФФФ</td>
+                    <td>БББББ</td>
+                </tr>
+                <tr>
+                    <td>Крупин Сергей Иванович</td>
+                    <td>м</td>
+                    <td>начальник</td>
+                    <td>01.01.1960</td>
+                    <td>ФФФФФ</td>
+                    <td>БББББ</td>
+                </tr>
+            </tbody>
+
+
+        </table>
+        <p>ДАННЫЕ О СОТРУДНИКАХ</p>
+    </div>
+</body>
+
+</html>
