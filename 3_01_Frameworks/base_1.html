@@ -7,9 +7,8 @@
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <style>
-        li {
-            margin-left: 1cm;
-
+        ul {
+            margin-left: 0.5cm;
         }
 
         * {
@@ -17,13 +16,9 @@
         }
 
         body {
-            margin-bottom: 10cm;
-        }
-
-        @media screen and (min-width: 640px) {
-            .menu-centered {
-                text-align: right;
-            }
+            margin-top: 20px;            
+            margin-bottom: 400px;
+            /* почему не дает сделать нижний маржин? сколько пикселей не ставлю все равно не меняется */
         }
     </style>
 </head>
@@ -38,9 +33,9 @@
     </header>
 
     <div class="row" style="border-right: 3px dotted #E3E5E8;">
-        <div class="medium-6 columns">
+        <div class="small-4 medium-6 columns">
             <div class="row" style="border-right: 3px dotted #E3E5E8;">
-                <ul>
+                <ul class="side-nav">
                     <li><i>Программа на Python — часть 1</i></li>
                     <li><a href='How_To_Python_p2_v3.html' target="_blank"><i>Программа на Python — часть 2</i></a></li>
                     <li><a href='How_To_Python_p2_v3.html' target="_blank"><i>Программа на Python — часть 3</i></a></li>
@@ -48,7 +43,7 @@
             </div>
             <div class="row" style="border-right: 3px dotted #E3E5E8;">
                 <h4><a name="list">Содержание</a></h4>
-                <ul>
+                <ul class="side-nav">
                     <li><u><a href="#anchor1">Наша первая программа</a></u></li>
                     <li><u><a href="#anchor2">Пример цикла For</a></u></li>
                 </ul>
@@ -56,7 +51,7 @@
         </div>
 
 
-        <div class="medium-6 columns">
+        <div class="small-8 medium-6 columns">
             <h3>HOW-TO: Программа на Python, Часть 1</h3>
             <p>Из множества существующих языков программирования Python — один из самых лёгких
                 в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
@@ -70,12 +65,12 @@
 
     </div>
     <div class="row" style="border-right: 3px solid #E3E5E8; ">
-        <div class="medium-3 columns">
+        <div class="small-3 medium-4 columns">
             <h4><a name="anchor1">Наша первая программа</a></h4>
             <p><a href="#list">к содержанию</a></p>
         </div>
 
-        <div class="medium-9 columns" style="border-left: 3px solid #E3E5E8; ">
+        <div class="small-9 medium-8 columns" style="border-left: 3px solid #E3E5E8; ">
             <p>Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает
                 каждая строка и пойдём дальше.</p>
             <p>Введите эти 4 строки:</p><br>
@@ -102,13 +97,13 @@
 
     </div>
     <div class="row">
-        <div class="medium-3 columns">
+        <div class="small-3 medium-4 columns">
             <h4><a name="anchor2">Пример цикла For</a></h4>
             <p><a href="#list">к содержанию</a></p>
         </div>
 
 
-        <div class="medium-9 columns" style="border-right: 3px dashed #E3E5E8; border-left: 3px dashed #E3E5E8;">
+        <div class="small-9 medium-8 columns" style="border-right: 3px dashed #E3E5E8; border-left: 3px dashed #E3E5E8;">
             <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
                 редактор и наберите следующую программу:</p><br>
             <code>#!/usr/bin/env python<br>

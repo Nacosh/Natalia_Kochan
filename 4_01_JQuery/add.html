@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+                    .nosamepass {
+                display: none;
+            }
+    </style>
+</head>
+
+<body>
+    <table style="width:700px">
+
+        <tr>
+            <td>
+                <form name="111" method="GET" action="http://fe.it-academy.by/TestForm.php">
+                    <fieldset id="choosePass">
+                        <legend>Проверка пароля</legend>
+                        <div class = "anchor">
+                            <input type="password" id="pass1" name="pass1" required class = "anchor">
+                            <label for="pass1">* Пароль</label>
+                        </div>
+                        <div class = "anchor">
+                            <input type="password" id="pass2" name="pass2" required class = "anchor">
+                            <label for="pass2">* Повторите пароль</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="Отправить" id='click'>
+                        </div>
+                        <div class="nosamepass">Passwords Don't Match</div>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <script>
+
+        // $( "#pass1" )
+        //     .on( "mouseenter", function() {
+        //     $( "#pass1" ).css({
+        //         "background-color": "yellow",
+        //         });
+        //         $( "#pass2" ).css({
+        //         "background-color": "yellow",
+        //         });
+        //     })
+        //     .on( "mouseleave", function() {
+        //         var styles = {
+        //         backgroundColor : "#ddd",
+        //         fontWeight: ""
+        //         };
+        //         $( this ).css( styles );
+        //     });
+      
+                  
+
+
+            $("#pass1, #pass2")
+                .on("focus", function () {
+                    $("#pass1").css({
+                        "background-color":"green",
+                    });
+                    $("#pass2").css({
+                        "background-color":"green",
+                    });
+                })
+
+            // $("#pass1, #pass2")
+            // .on ("focus", function () {
+            //     if ($("#pass1").val() != $("#pass2").val()) 
+            //     {
+                   
+            //         $("#pass1").css({
+            //             "background-color":"red",
+            //         });
+            //         $("#pass2").css({
+            //             "background-color":"red",
+            //         });
+            //     } 
+            // else {
+            //         $("#pass1").css({
+            //             "background-color":"green",
+            //         });
+            //         $("#pass2").css({
+            //             "background-color":"green",
+            //         });
+            //     }
+            // });
+
+            $("#pass1, #pass2")
+            .on ("mouseover", function () {
+                if ($("#pass1").val() != $("#pass2").val()) 
+                {
+                   
+                    $("#pass1").css({
+                        "background-color":"green",
+                    });
+                    $("#pass2").css({
+                        "background-color":"green",
+                    });
+                } 
+                else{
+                   
+                   $("#pass1").css({
+                       "background-color":"red",
+                   });
+                   $("#pass2").css({
+                       "background-color":"red",
+                   });
+               } 
+            });
+        </script>
+
+
+
+    </table>
+</body>
+
+</html>
